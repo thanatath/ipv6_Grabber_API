@@ -1,0 +1,23 @@
+{
+  "name": "ipv6_grabber_api",
+  "version": "1.0.0",
+  "description": "store and get IPV6 for general perpose and store it in sqlite",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thanatath/ipv6_Grabber_API.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thanatath/ipv6_Grabber_API/issues"
+  },
+  "homepage": "https://github.com/thanatath/ipv6_Grabber_API#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "sqlite3": "^5.0.11"
+  }
+}
