@@ -2,9 +2,10 @@ const express = require('express');
 const db = require('../db');
 const router = express.Router();
 
-router.get('/', (req, res) => {
+ router.get('/',async (req, res) =>  {
 
-  const ipv6 = db.getipv6();
+  const ipv6 = await db.getipv6();
+   
   res.json({
     message: ipv6,
   });
