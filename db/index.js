@@ -12,6 +12,7 @@ var init = () => {
 
 const storeipv6 = (ipv6) => {
   db.serialize(() => {
+    db.run('Delete from ipv6');
     const stmt = db.prepare('INSERT INTO ipv6 VALUES (?)');
     console.log('Stored: ' + ipv6);
     stmt.run(ipv6);
@@ -22,7 +23,7 @@ const storeipv6 = (ipv6) => {
 const getipv6 = () => {
   return  new Promise((resolve, reject) => {
     db.serialize(() => {
-      db.each('SELECT * FROM ipv6 ORDER BY ipv6 LIMIT 1', (err, row) => {
+      db.each('SELECT * FROM ipv6', (err, row) => {
         if (err) {
           reject(err);
         }

@@ -7,7 +7,7 @@ const router = express.Router();
   const ipv6 = await db.getipv6();
    
   res.json({
-    message: ipv6,
+    "ipv6": ipv6,
   });
 });
 
