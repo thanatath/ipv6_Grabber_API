@@ -14,8 +14,8 @@ store and get IPV6 for general perpose and store it in sqlite
 ## API 
 
 ```
-GET /api/v1/    -> Store IPv6 data
-POST /api/v1/   -> Get latest IPv6 data
+GET /api/v1/    -> Get latest IPv6 data
+POST /api/v1/   -> Store IPv6 data
 ```
 
 ## Getting Started <a name = "getting_started"></a>
